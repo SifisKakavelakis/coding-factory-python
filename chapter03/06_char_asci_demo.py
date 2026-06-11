@@ -1,0 +1,20 @@
+def process_characters():
+    ch = input("Please insert a character: ")
+
+    while ch != "#":
+        print(ch, ":", ord(ch))
+        ch = input("Please insert a char: ")
+
+def process_characters_2():
+    while True:
+        ch = input("Please insert a char: ")
+        if ch == "#":
+            break
+        print(ch, ":", ord(ch))
+
+def main():
+    process_characters()
+    process_characters_2()
+
+if __name__ == "__main__":
+    main()
